@@ -1,0 +1,72 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 15px;
+    background-color: blue;
+    transition: 1.3s ease;
+}
+section{
+    padding: 100px 200px;
+}
+
+/* hide hamburger on small screen */
+
+.hamburger-wrapper{
+    display: block;
+    color: rgb(255, 255,255);
+    cursor: pointer;
+    font-size: 35px;
+}
+.nav-items .nav-links{
+     font-size: 13px;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.logo-wrapper .logo{
+    font-size: 25px;
+    color: rgb(255, 255, 255)
+}
+
+
+/*media query*/
+@media (max-width: 980px){
+    
+    nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 20px;
+    }
+    
+
+}
+
+@media (max-width: 900px){
+    
+    nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 50px;
+    }
+    
+        .hamburger-wrapper{
+            display: block;
+            color: white;
+            cursor: pointer;
+            font-size: 30px;
+            
+        }
+        .nav-items{
+            display: none;
+        }
+        .open-nav-items{
+            display: flex;
+            flex-direction: column;
+            margin-top: 50px;
+            background-color: green;
+            width: 100px;
+        }
+        .nav-links{
+            text-align: right;
+ }
